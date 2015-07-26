@@ -4,4 +4,4 @@ title:  "Welcome"
 date:   2015-07-27
 ---
 
-Opening of the website.
+Thank you for visiting!
