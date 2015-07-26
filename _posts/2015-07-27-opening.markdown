@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Welcome" 
+date:   2015-07-27
+---
+
+Opening of the website.
