@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Gallery Kankan
+title: About
 ---
 
 About Gallery Kankan.

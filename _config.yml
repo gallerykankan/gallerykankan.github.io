@@ -15,8 +15,10 @@ navigation:
    url: /index.html
  - title: About
    url: /about.html
- - title: Contact
-   url: /contact.html
+ - title: Collections
+   url: /Collections.html
+ - title: Links
+   url: /links.html
 
 social:
    email: honten@kankan.co.jp
