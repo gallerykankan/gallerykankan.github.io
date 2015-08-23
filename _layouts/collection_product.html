@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+{% include head.html %}
+
+<body>
+
+   {% include header.html %}
+
+   <div class="content">
+      <div class="container">
+        <div class="collectionMenu">
+            {% include nav_collection.html %}
+        </div>
+        <div class="collectionContent">
+            <h2>{{ page.title }}</h2>
+            <div class="productPicture">
+            <a href="{{page.product.image}}" class="mfp-image"><img src="{{page.product.image}}" width="{{page.product.width}}" height="{{page.product.height}}"></a>
+			</div>
+			<div class="productDescription">
+				<p>
+					<span>Price</span>
+					<span>{{page.product.price}}</span>
+				</p>
+				<p>
+					<span>Size</span>
+					<span>{{page.product.size}}</span>
+				</p>
+				<p>
+					<span>Origin</span>
+					<span>{{page.product.origin}}</span>
+				</p>
+				<p>{{page.product.description}}</p>
+			</div>
+        </div>
+      </div>
+   </div><!-- end .content -->
+
+   {% include footer.html %}
+   {% include scripts.html %}
+    <script src="{{ "/assets/js/jquery.magnific-popup.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+   <script type="text/javascript">
+   $(document).ready(function() { $('.mfp-image').magnificPopup({type:'image'});});
+   </script>
+
+</body>
+
+</html>

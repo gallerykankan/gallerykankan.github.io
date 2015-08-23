@@ -31,8 +31,17 @@ GLOBAL STYLES
 	padding: 0;
 }
 
-.leftSide {
-	@include span(200px);
+.aboutLeft {
+	@include span(400px no-gutters);
+	
+}
+.aboutRight {
+	@include span(400px no-gutters);
+	
+}
+
+.collectionMenu {
+	@include span(200px no-gutters);
 
 	a {
 		text-decoration: none;
@@ -54,19 +63,39 @@ GLOBAL STYLES
 	}
 }
 
-.rightSide {
-	@include span(550px);
+.collectionContent {
+	@include span(600px no-gutters);
+
+	img {
+		border: 4px solid #D9D9D9;
+		border-radius: $br;
+	}
 }
 
-.leftHalfSide {
-	@include span(350px);
-	
-}
-.rightHalfSide {
-	@include span(400px);
-	
+.productPicture {
+	@include span(350px no-gutters);
 }
 
+.productDescription {
+	@include span(250px no-gutters);
+	h4 a {
+		text-decoration: none;
+	}
+	p {
+		margin: 0px 0px 1rem;
+	}
+	p span:nth-child(1) {
+		@include span(100px no-gutters);
+	}
+	p span:nth-child(2) {
+		@include span(150px no-gutters);
+	}
+}
+
+a:hover .productImage {
+	border: 4px solid #C9C9C9;
+	border-radius: $br;	
+}
 
 /***************
 HOMEPAGE STYLING

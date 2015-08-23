@@ -17,7 +17,7 @@
         </div>
         <div class="collectionContent">
             <h2>{{ page.title }}</h2>
-            {{ content }}
+            {% for product in page.products %}<a href="/collections/{{page.product_path}}/{{product.name}}.html"><img src="{{product.image}}" width="150" height="150"></a>{% endfor %}
         </div>
       </div>
    </div><!-- end .content -->
@@ -28,3 +28,6 @@
 </body>
 
 </html>
+
+
+
