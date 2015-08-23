@@ -31,6 +31,42 @@ GLOBAL STYLES
 	padding: 0;
 }
 
+.leftSide {
+	@include span(200px);
+
+	a {
+		text-decoration: none;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	ul li {
+		font-size: smaller;
+	}
+
+	ul li ul li {
+		font-size: smaller;
+		padding-left: 2em;
+	}
+}
+
+.rightSide {
+	@include span(550px);
+}
+
+.leftHalfSide {
+	@include span(350px);
+	
+}
+.rightHalfSide {
+	@include span(400px);
+	
+}
+
 
 /***************
 HOMEPAGE STYLING
